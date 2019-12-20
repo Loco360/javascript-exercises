@@ -1,7 +1,7 @@
 const {ftoc, ctof} = require('./tempConversion')
 
 describe('ftoc', function() {
-  it('works', function() {
+  xit('works', function() {
     expect(ftoc(32)).toEqual(0);
   });
   xit('rounds to 1 decimal', function() {
@@ -19,7 +19,7 @@ describe('ctof', function() {
   xit('rounds to 1 decimal', function() {
     expect(ctof(73.2)).toEqual(163.8);
   });
-  xit('works with negatives', function() {
+  it('works with negatives', function() {
     expect(ctof(-10)).toEqual(14);
   });
 });
